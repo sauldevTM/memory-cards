@@ -81,6 +81,12 @@ const App = () => {
     }
   };
 
+  /**
+   * Restablece el estado del juego a su configuración inicial.
+   * 
+   * Esta función genera un nuevo conjunto de cartas, restablece el arreglo de cartas volteadas,
+   * restablece el conteo de parejas encontradas y establece el estado del juego a jugando.
+   */
   const reiniciarJuego = () => {
     const cartasIniciales = generarCartas();
     setCartas(cartasIniciales);
