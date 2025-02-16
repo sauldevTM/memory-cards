@@ -11,7 +11,7 @@ Este es un juego de memoria desarrollado con React y Vite.
 
 1. Clona el repositorio:
    ```sh
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/sauldevTM/memory-cards.git
    cd memory-cards
 
 2. Instala las dependencias:
