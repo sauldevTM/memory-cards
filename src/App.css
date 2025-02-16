@@ -1,0 +1,62 @@
+/* Asegura que el body ocupe toda la altura de la ventana */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal de la aplicación */
+.app {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en columna */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;  /* Ocupa toda la altura de la ventana */
+}
+
+/* Estilo del tablero de juego */
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilo de cada carta */
+.carta {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Estilo cuando la carta está volteada */
+.carta.volteada {
+  background-color: #90ee90;
+}
+
+/* Estilo cuando la carta está emparejada */
+.carta.emparejada {
+  background-color: #ffcc00;
+}
+
+/* Estilo del botón */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
